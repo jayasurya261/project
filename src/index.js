@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Header from './header';
+import Login from './login';
+import Product_home from './product_home';
+import Animation from './animation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Header/>
+    {/* <Login></Login>  */}
+    <Product_home></Product_home>
+    <Animation/>
   </React.StrictMode>
 );
 

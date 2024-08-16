@@ -1,0 +1,55 @@
+#food1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 70%;
+    bottom: 0%;
+    animation: food1 4s linear infinite;
+    z-index: 1;
+}
+#food2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    top: 65%;
+    animation: food2 7s linear infinite;
+}
+#food3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    bottom: -10%;
+    animation: food3 4s linear infinite;
+}
+@keyframes food1{
+    0%{
+        bottom: -10%;
+        opacity: 0.7;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 0.7;
+    }
+}
+@keyframes food2{
+    0%{
+        left: -10%;
+        opacity: 0.7;
+    }
+    100%{
+        left: 105%;
+        opacity: 0.7;
+    }
+}
+@keyframes food3{
+    0%{
+        bottom: -10%;
+        opacity: 0.7;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 0.7;
+    }
+}

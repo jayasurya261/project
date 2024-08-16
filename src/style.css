@@ -1,0 +1,225 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+/*   background-image: url(images/buddha.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -80px;*/
+}
+/*--------------------header section  ------------------------*/
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: azure;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  position: sticky;
+}
+.header-logo{
+  padding-top: 5px;
+  width: 90px;
+  padding-left: 100px;
+  width: 50px;
+  height: 50px;
+}
+.header-call{
+  padding-left: 200px;
+  padding-top: 20px;
+  width: 26px;
+  height: 26px;
+}
+.header-contact{
+  padding-top: 25px;
+  padding-left: 10px;
+}
+.header-mail{
+  padding-left: 50px;
+  padding-top: 20px;
+  width: 30px;
+  height: 30px;
+}
+.header-timing{
+  padding-left: 50px;
+  padding-top: 25px;
+}
+.header-line{
+  width: 40px;
+  padding-left: 40px;
+  opacity: 1;
+  height: 50px;
+  padding-top: 7px;
+}
+.header-link{
+  
+  width: 50px;
+  height: 50px;
+  scale: 0.05;
+}
+.header-menu{
+  width: 30px;
+  height: 30px;
+  padding-top: 40px;
+  padding-left: 90px;
+  scale: 0.05;
+  display: none;
+}
+
+/*--------------Navigation----------------*/
+.navigation{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  background-color: rgb(216, 253, 240);
+  padding-bottom: 15px;
+  border: 1px solid  rgba(129, 128, 128, 0.3);
+  position: fixed;
+  top: 65px;
+  left: 700px;
+  border-radius: 30px;
+  width: max-content;
+  z-index: 998;
+}
+.navigation a{
+  margin-top: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: inherit;
+  text-decoration: none;
+  border: 2px solid rgba(128, 128, 128, 0.8);
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 400;  
+   
+}
+.navigation a:hover{
+  scale: 1.1;
+}
+/*----------header nav --------*/
+.header-nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.header-nav ul{
+  
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.header-nav li{
+  height: 50px;
+  
+}
+.header-nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.header-nav a:hover{
+  background-color: #f0f0f0;
+}
+.header-sidebar{
+  position: fixed;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+ 
+}
+.header-sidebar li{
+  width: 100%;
+}
+.header-sidebar a{
+  width: 100%;
+}
+
+/*-----------media query for header---------*/
+@media(max-width:800px)
+{
+  .hide-on-mobile{
+      display: none;
+  }
+  .menu-in-right{
+      justify-content:space-between;
+  }
+  .header-menu{
+      display: block;
+  }
+}
+/*----------1st section----------*/
+.doctor-group-pic{
+  width: 600px;
+  height: 400px;
+  margin-top: 200px;
+  margin-left: 50px;
+  box-shadow: -10px 10px 20px rgba(55, 54, 54, 0.7);
+  border-radius: 10px;
+}
+.logo{
+  margin-left: 450px;
+  margin-bottom: 200px;
+  scale: 0.5;
+  border-radius: 30px;
+}
+.welcome-p{
+  position: absolute;
+  left: 1170px;
+  top: 400px;
+  font-size: 25px;
+  font-weight: 300;
+  color: rgb(36, 64, 108);
+  
+}
+.name-p{
+  position: absolute;
+  left: 1020px;
+  top: 450px;
+  font-size: 23px;
+  font-weight: 700;
+  color: rgb(31, 33, 111);
+  padding: 10px;
+  background-color: rgba(250, 235, 215,0.2);
+  border-radius: 20px;
+}
+.slogan-p{
+  position: absolute;
+  left: 1150px;
+  font-size: 35px;
+  font-weight: 700;
+  color: #f0f0f0;
+  padding: 10px;
+  background-color: rgba(236, 207, 170, 0.1);
+  top: 600px;
+}
+.section-two{
+  position: relative;
+  justify-content:center;
+}
+.detail-p{
+  background-color: rgb(216, 253, 240);
+  padding: 20px;
+  margin-left: 450px;
+  border-radius: 30px;
+  margin-right: 490px;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
