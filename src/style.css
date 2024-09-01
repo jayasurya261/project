@@ -19,6 +19,15 @@ body{
   z-index: 999;
   position: sticky;
 }
+.profile{
+  width: 20px;
+  height: 20px;
+}
+.profile img{
+  width: 30px;
+  margin-top: 15px;
+  margin-left: 120px;
+}
 .header-logo{
   padding-top: 5px;
   width: 90px;

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './login.css'
 const Login = () =>{
     return (
@@ -7,9 +8,15 @@ const Login = () =>{
             <br/>
             <form>
             <input type="email" placeholder="Enter Email Here" id='input'></input><br/>
-            <input type="password" placeholder="*********" id='password'></input><br/>    
-            <button type="submit">SUBMIT</button>
-            <p>New User?</p>
+            <input type="password" placeholder="*********" id='password'></input><br/>   
+            <Link to="/home">
+            <button type="submit" id='submit'>SUBMIT</button>
+            </Link> <br/>
+            <Link to="/register">
+            <button id='new-user'>
+                New User?
+            </button>
+            </Link>
             </form>
         </div>
         </>

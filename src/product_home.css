@@ -40,7 +40,7 @@
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    z-index: 999;
+    z-index: 888;
     position: relative;
 }
 #filter_field{
@@ -63,4 +63,83 @@
 }
 #filter_list ul li:hover{
     background: rgb(191, 197, 198);
+}
+#recepie{
+    margin-top: 50px;
+    margin-left: 670px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: aquamarine;
+    padding: 20px 80px;
+    cursor: pointer;
+    color: rgb(82, 70, 70);
+    margin-bottom: 100px;
+}
+#recepie:hover{
+    scale: 1.2;
+    color: black;
+}
+#recepie-text{
+    margin-left: 570px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 30px;
+    border: 1px solid black;
+    width: 330px;
+    margin-bottom: 80px;
+}
+.food_detail:nth-child(1){
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+}
+.food_container li:hover{
+    scale: 1.05;
+}
+.footer{
+    width: 1450px;
+    margin-left: 25px;
+    height: 400px;
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    background-color: rgb(165, 153, 153);
+}
+#embed-ded-map-canvas img{
+    max-width:none!important;
+    background:none!important;
+    font-size: inherit;
+    font-weight:inherit;
+}
+.footer div input{
+    height: 30px;
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 40px;
+    
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+}
+.footer div p{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+.footer div button{
+    margin-left: 135px;
+    width: 100px;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+#address-text{
+    margin-top: 30px;
+    margin-left: 60px;
+    font-size: 20px;
+    color: white;
 }

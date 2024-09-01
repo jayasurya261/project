@@ -6,15 +6,14 @@ import Header from './header';
 import Login from './login';
 import Product_home from './product_home';
 import Animation from './animation';
+import Recepie from './recepie';
+import App from './app';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Header/>
-    {/* <Login></Login>  */}
-    <Product_home></Product_home>
-    <Animation/>
-  </React.StrictMode>
+  <Recepie/>
+    // <App/> 
 );
 
 // If you want to start measuring performance in your app, pass a function

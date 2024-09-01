@@ -7,6 +7,7 @@ import instagram from "./images/instagram.png";
 import whatsapp from "./images/whatsapp.png";
 import more from "./images/more.png";
 import Menu from "./menu";
+import profile from './images/user.png'
 const Header = () => {
   return (
     <>
@@ -28,6 +29,7 @@ const Header = () => {
         <a href="#" className="header-link hide-on-mobile">
           <img src={whatsapp} />
         </a>
+        <a href="#" className="profile"><img src={profile} ></img></a>
         <button className="header-menu" onClick="ShowSideBar()">
           <img src={more} />
         </button>

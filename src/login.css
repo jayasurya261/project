@@ -41,7 +41,7 @@ body .card{
 #password:hover{
     scale: 1.1;
 }
-.card button{
+#submit{
     border: 0;
     outline: 0;
     background-color: #306458;
@@ -54,10 +54,28 @@ body .card{
     scale: 1.2;
     margin-bottom: 10px;
 }
-.card button:hover{
+#submit:hover{
     scale: 1.1;
 }
 .card p{
     cursor: pointer;
+}
+#name{
+    border: 0;
+    outline: 0;
+    background: #47ecd4;
+    color: #555;
+    padding: 10px 25px;
+    height: 30px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    margin-bottom: 20px;
 
+}
+#new-user{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
