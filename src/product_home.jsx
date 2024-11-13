@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import "./product_home.css";
 import arrow_down from "./images/arrow-down.png";
 import biriyani from "./images/food_pics/biriyani.jpg";
@@ -12,6 +13,32 @@ import fish1 from './images/food_pics/top-view-delicious-fish-meal-tray.jpg'
 import Animation from './animation';
 
 const Product_Home = () => {
+  const [message, setMessage] = useState('');
+  
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw71a8-6XJn9ODqsUmwmWRXB1VOmHxrs5p7nr2d5P3eNesRpjUAi4Q3gY6lQHEueIXumQ/exec';
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    const form = e.target;
+    
+    try {
+      await fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form),
+      });
+      
+      setMessage("Thank You For Subscribing!");
+      
+      setTimeout(() => {
+        setMessage("");
+      }, 5000);
+      
+      form.reset();
+    } catch (error) {
+      console.error('Error!', error.message);
+    }
+  };
   return (
     <>
       <Animation />
@@ -100,9 +127,10 @@ const Product_Home = () => {
     </div>
     <div>
       <p>FeedBack Form</p>
+      <form name="Email">
     <input type='text' placeholder='Review'></input><br/>
-    <input type='text' placeholder='Find Bug?'></input><br/>
-    <button>SUBMI</button>
+    <button type='submit'>SUBMIT</button>
+    </form>
     </div>
     <p id='address-text'><span style={{fontSize:"22px"}}>Address :</span> 
       <br/><br/>

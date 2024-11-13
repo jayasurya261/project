@@ -8,6 +8,7 @@ import whatsapp from "./images/whatsapp.png";
 import more from "./images/more.png";
 import Menu from "./menu";
 import profile from './images/user.png'
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
@@ -52,7 +53,9 @@ const Header = () => {
         <a href="#">HEALTH</a>
         <a href="#">GALLERY</a>
         <a href="#">MENU</a>
-        <a href="#">CONTACT</a>
+        <Link to="recepie">
+        <p>RECEPIE</p>
+        </Link>
         <a href="#">REVIEWS</a>
     </div>
     </>

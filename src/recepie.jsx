@@ -1,5 +1,5 @@
 import "./recepie.css";
-import search from "./images/recepie/search-interface-symbol.png";
+import search1 from "./images/recepie/search-interface-symbol.png";
 import { useState,useEffect } from "react";
 const Recepie = () => {
     const [recepie, setRecepie] = useState([]);
@@ -43,7 +43,7 @@ const Recepie = () => {
         <form>
         <input type="text" placeholder="eg.pizza" id="text"></input>
         <button id="search-button" onClick={fetchStart}>
-          <img src={search} alt="" />
+          <img src={search1} alt="" />
         </button>
         </form>
       </div>
